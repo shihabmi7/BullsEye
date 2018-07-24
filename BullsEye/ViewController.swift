@@ -25,7 +25,7 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         currentValue = lroundf(slider.value)
-        startNewRound()
+        startOver()
     }
     func startNewRound(){
         targetvaue =  1 + Int(arc4random_uniform(100))
@@ -72,14 +72,24 @@ class ViewController: UIViewController {
         
         let message = "The value of slide is \(currentValue)" + "\n The target value is \(targetvaue)" + "\n The difference is: \(differece)"
         let alert = UIAlertController(title: title, message: message, preferredStyle: .alert)
-        let action = UIAlertAction(title: "Awesome", style: .default, handler: nil)
+        let action = UIAlertAction(title: "Awesome", style: .default, handler: {
+            
+            action in
+            self.startNewRound()
+        })
         alert.addAction(action)
         present(alert, animated: true, completion: nil)
         
-        startNewRound()
+        //startNewRound()
         
     }
     
+    
+    @IBAction func startOver(){
+        score = 0;
+        roundNumber = 0
+        startNewRound()
+    }
     
     
 
