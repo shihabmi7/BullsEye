@@ -13,6 +13,7 @@
 		35C4D75C20EE2A6600496934 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 35C4D75B20EE2A6600496934 /* Assets.xcassets */; };
 		35C4D75F20EE2A6600496934 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 35C4D75D20EE2A6600496934 /* LaunchScreen.storyboard */; };
 		35F3E0DB210865D000925F57 /* AboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35F3E0DA210865D000925F57 /* AboutViewController.swift */; };
+		35F3E0DD210877FA00925F57 /* AboutMeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35F3E0DC210877FA00925F57 /* AboutMeViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		35C4D75E20EE2A6600496934 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		35C4D76020EE2A6600496934 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		35F3E0DA210865D000925F57 /* AboutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutViewController.swift; sourceTree = "<group>"; };
+		35F3E0DC210877FA00925F57 /* AboutMeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutMeViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +62,7 @@
 				35C4D75420EE2A6400496934 /* AppDelegate.swift */,
 				35C4D75620EE2A6400496934 /* ViewController.swift */,
 				35C4D75820EE2A6400496934 /* Main.storyboard */,
+				35F3E0DC210877FA00925F57 /* AboutMeViewController.swift */,
 				35C4D75B20EE2A6600496934 /* Assets.xcassets */,
 				35C4D75D20EE2A6600496934 /* LaunchScreen.storyboard */,
 				35C4D76020EE2A6600496934 /* Info.plist */,
@@ -140,6 +143,7 @@
 			files = (
 				35F3E0DB210865D000925F57 /* AboutViewController.swift in Sources */,
 				35C4D75720EE2A6400496934 /* ViewController.swift in Sources */,
+				35F3E0DD210877FA00925F57 /* AboutMeViewController.swift in Sources */,
 				35C4D75520EE2A6400496934 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
