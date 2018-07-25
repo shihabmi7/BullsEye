@@ -24,9 +24,15 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        currentValue = lroundf(slider.value)
+        //currentValue = lroundf(slider.value)
         startOver()
-    }
+        let thumbImageNormal = UIImage(named: "SliderThumb-Normal")
+        slider.setThumbImage(thumbImageNormal, for: .normal)
+        
+        
+        let thumbImageHighlighted  = UIImage(named: "SliderThumb-Highlighted")
+        slider.setThumbImage(thumbImageHighlighted  , for: .highlighted)
+    } 
     func startNewRound(){
         targetvaue =  1 + Int(arc4random_uniform(100))
         currentValue = 50
@@ -73,7 +79,6 @@ class ViewController: UIViewController {
         let message = "The value of slide is \(currentValue)" + "\n The target value is \(targetvaue)" + "\n The difference is: \(differece)"
         let alert = UIAlertController(title: title, message: message, preferredStyle: .alert)
         let action = UIAlertAction(title: "Awesome", style: .default, handler: {
-            
             action in
             self.startNewRound()
         })
