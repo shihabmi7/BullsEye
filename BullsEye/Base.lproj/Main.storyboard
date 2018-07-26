@@ -249,36 +249,58 @@
                         <rect key="frame" x="0.0" y="0.0" width="736" height="414"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Author: Md Shihab Uddin" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rNE-QZ-6ic">
-                                <rect key="frame" x="125" y="37" width="318" height="34"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="28"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="Shihab Uddin, Android &amp; IOS Developer" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="v2U-Ie-Gnc">
-                                <rect key="frame" x="164" y="96" width="240" height="128"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rXk-AE-OwU">
-                                <rect key="frame" x="265" y="217" width="39" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Close"/>
-                                <connections>
-                                    <action selector="Close:" destination="WZS-jT-Ohd" eventType="touchUpInside" id="iR7-jh-fH7"/>
-                                </connections>
-                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Background" translatesAutoresizingMaskIntoConstraints="NO" id="RHn-lp-fZ9">
+                                <rect key="frame" x="0.0" y="0.0" width="736" height="414"/>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="swJ-mC-lTP">
+                                <rect key="frame" x="20" y="0.0" width="696" height="414"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rXk-AE-OwU">
+                                        <rect key="frame" x="294" y="266" width="109" height="37"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" title="Close" backgroundImage="Button-Normal"/>
+                                        <connections>
+                                            <action selector="Close:" destination="WZS-jT-Ohd" eventType="touchUpInside" id="iR7-jh-fH7"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Author: Md Shihab Uddin" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rNE-QZ-6ic">
+                                        <rect key="frame" x="189" y="62" width="318" height="34"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="28"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" text="Shihab Uddin, Android &amp; IOS Developer" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="v2U-Ie-Gnc">
+                                        <rect key="frame" x="228" y="143" width="240" height="128"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" white="1" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="17"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="RHn-lp-fZ9" firstAttribute="leading" secondItem="NDO-wC-gn7" secondAttribute="leading" id="CWp-uD-1nM"/>
+                            <constraint firstItem="swJ-mC-lTP" firstAttribute="top" secondItem="NDO-wC-gn7" secondAttribute="topMargin" id="Q9J-F3-mwN"/>
+                            <constraint firstItem="RHn-lp-fZ9" firstAttribute="top" secondItem="NDO-wC-gn7" secondAttribute="topMargin" id="RFl-gT-q9m"/>
+                            <constraint firstItem="CMs-31-KVM" firstAttribute="trailing" secondItem="RHn-lp-fZ9" secondAttribute="trailing" id="Ug9-UR-ShH"/>
+                            <constraint firstItem="swJ-mC-lTP" firstAttribute="leading" secondItem="NDO-wC-gn7" secondAttribute="leadingMargin" id="bde-r8-eDD"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="swJ-mC-lTP" secondAttribute="bottom" id="c1x-wd-vJW"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="swJ-mC-lTP" secondAttribute="trailing" id="dqM-79-n8k"/>
+                            <constraint firstItem="swJ-mC-lTP" firstAttribute="centerX" secondItem="NDO-wC-gn7" secondAttribute="centerX" id="eed-jL-EVO"/>
+                            <constraint firstItem="swJ-mC-lTP" firstAttribute="centerY" secondItem="NDO-wC-gn7" secondAttribute="centerY" id="thp-ef-RVV"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="RHn-lp-fZ9" secondAttribute="bottom" id="wUe-qz-oBh"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="CMs-31-KVM"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="POx-cg-NJZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1557.0422535211267" y="97.5"/>
+            <point key="canvasLocation" x="1627" y="88"/>
         </scene>
     </scenes>
     <resources>
