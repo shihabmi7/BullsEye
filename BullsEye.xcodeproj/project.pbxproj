@@ -14,6 +14,7 @@
 		35C4D75F20EE2A6600496934 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 35C4D75D20EE2A6600496934 /* LaunchScreen.storyboard */; };
 		35F3E0DB210865D000925F57 /* AboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35F3E0DA210865D000925F57 /* AboutViewController.swift */; };
 		35F3E0DD210877FA00925F57 /* AboutMeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35F3E0DC210877FA00925F57 /* AboutMeViewController.swift */; };
+		A8EBBECC21F719420027D3F2 /* Simulator Screen Shot - iPhone SE - 2019-01-22 at 15.22.21.png in Resources */ = {isa = PBXBuildFile; fileRef = A8EBBECB21F719420027D3F2 /* Simulator Screen Shot - iPhone SE - 2019-01-22 at 15.22.21.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		35C4D76020EE2A6600496934 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		35F3E0DA210865D000925F57 /* AboutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutViewController.swift; sourceTree = "<group>"; };
 		35F3E0DC210877FA00925F57 /* AboutMeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutMeViewController.swift; sourceTree = "<group>"; };
+		A8EBBECB21F719420027D3F2 /* Simulator Screen Shot - iPhone SE - 2019-01-22 at 15.22.21.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Simulator Screen Shot - iPhone SE - 2019-01-22 at 15.22.21.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -42,6 +44,7 @@
 		35C4D74820EE2A6400496934 = {
 			isa = PBXGroup;
 			children = (
+				A8EBBECB21F719420027D3F2 /* Simulator Screen Shot - iPhone SE - 2019-01-22 at 15.22.21.png */,
 				35C4D75320EE2A6400496934 /* BullsEye */,
 				35C4D75220EE2A6400496934 /* Products */,
 			);
@@ -129,6 +132,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				35C4D75F20EE2A6600496934 /* LaunchScreen.storyboard in Resources */,
+				A8EBBECC21F719420027D3F2 /* Simulator Screen Shot - iPhone SE - 2019-01-22 at 15.22.21.png in Resources */,
 				35C4D75C20EE2A6600496934 /* Assets.xcassets in Resources */,
 				35C4D75A20EE2A6400496934 /* Main.storyboard in Resources */,
 			);

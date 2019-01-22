@@ -2,7 +2,7 @@
 //  ViewController.swift
 //  BullsEye
 //
-//  Created by Mahmud Riad on 7/5/18.
+//  Created by Shihab on 7/5/18.
 //  Copyright © 2018 Shihab. All rights reserved.
 //
 
